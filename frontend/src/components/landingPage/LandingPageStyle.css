@@ -7,10 +7,148 @@ body {
     margin-top: -22px;
 }
 
-.title{
+.upHalf{
+    display: flex;
     height: 35rem;
     /* background-color: antiquewhite; */
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"  fill="%23f4e4d7" preserveAspectRatio="none"><path fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,165.3C384,149,480,171,576,165.3C672,160,768,128,864,133.3C960,139,1056,181,1152,208C1248,235,1344,245,1392,250.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" /></svg>');
     background-size: cover;
     border-radius: 0;
 }
+
+.title{
+    font-size: 30px;
+    width: auto;
+}
+
+.titleText1{
+    width: auto;
+    margin-left: 130px;
+}
+
+.titleText2{
+    width: auto;
+    margin-left: 210px;
+}
+
+.upperRight {
+    margin-left: auto;
+    padding-right: 40px;
+    padding-top: 70px;
+}
+
+.lowHalf{
+    display: flex;
+}
+/* 
+    <!-- HTML !-->
+<button class="makeRoomBtn" role="button">Button 19</button> */
+
+/* ------------------Btn---------------------------------------- */
+.makeRoomBtn,
+.joinRoomBtn {
+  appearance: button;
+  background-color: #ebc53f;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.makeRoomBtn:after,
+.joinRoomBtn:after {
+  background-clip: padding-box;
+  background-color: #e6b43f;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.makeRoomBtn:main,
+.makeRoomBtn:focus,
+.joinRoomBtn:main,
+.joinRoomBtn:focus {
+  user-select: auto;
+}
+
+.makeRoomBtn:hover:not(:disabled),
+.joinRoomBtn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.makeRoomBtn:disabled,
+.joinRoomBtn:disabled {
+  cursor: auto;
+}
+
+.makeRoomBtn:active,
+.joinRoomBtn:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+/* --------------------------------- */
+
+.makeRoom{
+    margin-left: 250px;
+    /* margin-top: 50px; */
+}
+
+.joinRoom{
+    margin-left: auto;
+    margin-right: 250px;
+    margin-top: -40px;
+}
+.joinRoom input,
+.joinRoom button {
+
+    display: block; 
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.roomLinkInput {
+    font-family: "SF Pro";
+    max-width: 190px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+  }
+  
+  .roomLinkInput:focus {
+    box-shadow: 5.5px 7px 0 black;
+  }
+  
