@@ -1,0 +1,49 @@
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import './GameArenaStyle.css';
+
+export const GameArena = () => {
+  const { roomId } = useParams();
+
+  return (
+    <>
+        <div className="header">
+            <div className='title'>MoviEmoji</div>
+            <div className='roomLink'>
+                Room ID: {roomId}
+            </div>
+        </div>
+        <div className='controlBtns'>
+
+            <div className='startGame'>
+                <button>Start Game</button>
+            </div>
+
+            <div className='leaveGame'>
+                <button>Leave Game</button>
+            </div>
+
+            <div className='nextGame'>
+                <button>Next Game</button>
+            </div>
+
+        </div>
+        <div className='mainBody'>
+            <div className='leftSec'>
+                <div className='playersName'>
+                    Player : Score
+                </div>
+            </div>
+            <div className='rightSec'>
+                <div className='gameArea'>
+                    Game Area
+                </div>
+                <div className='answer'>
+                    <input type='text' placeholder='Enter your answer' />
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+    </>
+  );
+};

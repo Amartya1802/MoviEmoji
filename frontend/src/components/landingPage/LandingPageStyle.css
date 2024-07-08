@@ -1,5 +1,5 @@
 body {
-    background-color: #ffc1c1;
+    /* background-color: #f2b6b6; */
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -37,16 +37,9 @@ body {
     padding-top: 70px;
 }
 
-.lowHalf{
-    display: flex;
-}
-/* 
-    <!-- HTML !-->
-<button class="makeRoomBtn" role="button">Button 19</button> */
 
 /* ------------------Btn---------------------------------------- */
-.makeRoomBtn,
-.joinRoomBtn {
+.makeRoomBtn {
   appearance: button;
   background-color: #ebc53f;
   border: solid transparent;
@@ -77,8 +70,7 @@ body {
   width: 100%;
 }
 
-.makeRoomBtn:after,
-.joinRoomBtn:after {
+.makeRoomBtn:after {
   background-clip: padding-box;
   background-color: #e6b43f;
   border: solid transparent;
@@ -94,49 +86,41 @@ body {
 }
 
 .makeRoomBtn:main,
-.makeRoomBtn:focus,
-.joinRoomBtn:main,
-.joinRoomBtn:focus {
+.makeRoomBtn:focus {
   user-select: auto;
 }
 
-.makeRoomBtn:hover:not(:disabled),
-.joinRoomBtn:hover:not(:disabled) {
+.makeRoomBtn:hover:not(:disabled) {
   filter: brightness(1.1);
   -webkit-filter: brightness(1.1);
 }
 
-.makeRoomBtn:disabled,
-.joinRoomBtn:disabled {
+.makeRoomBtn:disabled {
   cursor: auto;
 }
 
-.makeRoomBtn:active,
-.joinRoomBtn:active {
+.makeRoomBtn:active {
   border-width: 4px 0 0;
   background: none;
 }
 /* --------------------------------- */
 
-.makeRoom{
-    margin-left: 250px;
-    /* margin-top: 50px; */
+.lowHalf{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* height: 100%; */
 }
 
-.joinRoom{
-    margin-left: auto;
-    margin-right: 250px;
-    margin-top: -40px;
-}
-.joinRoom input,
-.joinRoom button {
 
+.makeRoom button {
     display: block; 
     width: 100%; 
     margin-top: 10px; 
-}
+} 
 
-.roomLinkInput {
+
+.usernameInput1 {
     font-family: "SF Pro";
     max-width: 190px;
     padding: 0.875rem;
@@ -148,7 +132,5 @@ body {
     transition: ease 0.25s;
   }
   
-  .roomLinkInput:focus {
-    box-shadow: 5.5px 7px 0 black;
-  }
+ 
   

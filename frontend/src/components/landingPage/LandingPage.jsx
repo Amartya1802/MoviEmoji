@@ -1,6 +1,17 @@
-import "./LandingPageStyle.css";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './LandingPageStyle.css';
 
 export function LandingPage() {
+  const [username, setUsername] = useState('');
+  const navigate = useNavigate();
+
+  const handleCreateRoom = () => {
+    if (username) {
+      navigate('/game', { state: { username } });
+    }
+  };
+
   return (
     <>
       <div className="upHalf"> 
@@ -22,13 +33,18 @@ export function LandingPage() {
 
       <div className="lowHalf">
         <div className="makeRoom">
-          <button className="makeRoomBtn">Create Room</button>
-        </div>
-        <div className="joinRoom">
-          <input type="text" className="roomLinkInput" placeholder="Paste room link here" />
-          <button className="joinRoomBtn">Join Room</button>
+          <input 
+            type="text" 
+            placeholder="Enter Username" 
+            className="usernameInput1"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <button className="makeRoomBtn" onClick={handleCreateRoom}>
+            Create Room
+          </button>
         </div>
       </div>
     </>
-  )
+  );
 }

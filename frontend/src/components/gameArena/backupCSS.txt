@@ -1,0 +1,73 @@
+body {
+    background-color: #a8b4cd;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: -22px;
+}
+
+.header {
+    margin-top: 30px;
+    display: flex;
+}
+
+.title {
+    font-size: 30px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.roomLink {
+    font-size: 20px;
+    width: auto;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 10px
+}
+
+.controlBtns {
+    display: flex;
+    justify-content: right;
+    margin-right: 180px;
+    margin-top: 20px;
+    margin-bottom: -50px;
+    gap: 60px
+}
+
+.mainBody {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.playersName {
+    width: 300px; 
+    height: 200px;
+    border: 2px solid #000; 
+    background-color: #f0f0f0;
+    overflow: auto; 
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.gameArea {
+    margin-left: auto;
+    margin-right: 500px;
+    width: 300px; 
+    height: 200px;
+    border: 2px solid #000; 
+    background-color: #f0f0f0;
+    overflow: auto; 
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.leftSec {
+    margin-top: 50px;
+}
+
+.rightSec {
+    margin-left: 300px;
+    margin-top: 50px;
+}
