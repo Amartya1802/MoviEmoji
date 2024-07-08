@@ -10,16 +10,14 @@ export function GameArena() {
   const [score, setScore] = useState(0);
 
   const fetchNewEmojiString = async () => {
-    // Call your API to get a new emoji string and answer
-    // Example:
-    // const response = await fetch('your-api-endpoint');
-    // const data = await response.json();
-    // setEmojiString(data.emojiString);
-    // setAnswer(data.answer);
-
-    // For now, let's use a placeholder
-    setEmojiString('🎥🤖');
-    setAnswer('Robot Movie'); // Placeholder
+    try {
+      const response = await fetch('http://localhost:3001/generate');
+      const data = await response.json();
+      setEmojiString(data.emojiString);
+      setAnswer(data.answer);
+    } catch (error) {
+      console.error('Error fetching new emoji string:', error);
+    }
   };
 
   useEffect(() => {
@@ -58,3 +56,4 @@ export function GameArena() {
     </div>
   );
 }
+
