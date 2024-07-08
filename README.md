@@ -1,2 +1,3 @@
 # MoviEmoji
-A silly  multi-player game using emojis 😎, where you describe a movie with couple of emojis and the other player(s) needs to guess.
+A fun game with emojis 😎
+Just enter your username, and create a game room, where you will be presented with AI generated emoji string, and you need to guess the name -> type it -> press submit. If your guess is correct, score is added.
